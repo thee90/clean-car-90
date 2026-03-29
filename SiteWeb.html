@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clean Car 90</title>
+
+<style>
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #111;
+    --bg-color: #f5f5f5;
+    --text-color: #222;
+    --text-light: #fff;
+}
+
+body {
+    margin:0;
+   font-family: 'Poppins', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--secondary-color);
+    color: var(--text-light);
+    padding: 20px 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--primary-color);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s; 
+}
+
+nav a:hover {
+    color: #fff;
+}
+.hero {
+    height: 300px;
+    background: url('imageauto.jpg') center/cover no-repeat;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.services-box {
+    flex: 1 1 400px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.services-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.services-box h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.services-box p {
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    color: var(--text-color);
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: center;
+}
+
+.price-table th {
+    background: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.contact {
+    background: #222;
+    color: var(--text-light);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+button {
+    background: var(--primary-color);
+    border: none;
+    padding: 12px 25px;
+    color: var(--text-light);
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+footer {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+@media(max-width: 900px){
+    .services-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Clean Car 90</h1>
+<p>Nettoyage Intérieur & Extérieur - Professionnel</p>
+</header>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#prix">Tarifs</a>
+<a href="#contact">Contact</a>
+<a href="#social">Réseaux</a>
+</nav>
+
+<!-- Hero photo pro sans texte -->
+<section class="hero"></section>
+
+<section class="section" id="services">
+<h2>Nos Services</h2>
+<div class="services-container">
+    <div class="services-box">
+        <h3>Basiques</h3>
+        <p><strong>Intérieur Basique :</strong> aspiration complète, nettoyage vapeur plastiques et vitres.</p>
+        <p><strong>Extérieur Basique :</strong> nettoyage à la vapeur carrosserie, jantes face extérieure, vitres à la vapeur.</p>
+        <p><strong>Duo Basique :</strong> intérieur + extérieur basique.</p>
+    </div>
+    <div class="services-box">
+        <h3>Premiums</h3>
+        <p><strong>Intérieur Premium :</strong> aspiration complète, nettoyage vapeur plastiques et moquettes, vitres, entrées de porte, pressing sièges tissu ou cuir + soins protecteurs.</p>
+        <p><strong>Extérieur Premium :</strong> nettoyage vapeur carrosserie, démoustiquage/découdronnage, jantes + roues, dressing pneus/plastiques, vitres, lustrant, traitement perlant.</p>
+        <p><strong>Duo Premium :</strong> intérieur + extérieur Premium complet.</p>
+    </div>
+</div>
+</section>
+
+<section class="section" id="prix">
+<h2>Nos Tarifs</h2>
+<h3>Formules Basique - Catégories A/B/C</h3>
+<table class="price-table">
+<tr><th>Formule</th><th>Catégorie A</th><th>Catégorie B</th><th>Catégorie C</th></tr>
+<tr><td>Intérieur Basique</td><td>50€</td><td>55€</td><td>60€</td></tr>
+<tr><td>Extérieur Basique</td><td>50€</td><td>45€</td><td>50€</td></tr>
+<tr><td>Duo Basique</td><td>80€</td><td>90€</td><td>100€</td></tr>
+</table>
+
+<h3>Formules Premium - Catégories A/B/C</h3>
+<table class="price-table">
+<tr><th>Formule</th><th>Catégorie A</th><th>Catégorie B</th><th>Catégorie C</th></tr>
+<tr><td>Intérieur Premium</td><td>80€</td><td>85€</td><td>90€</td></tr>
+<tr><td>Extérieur Premium</td><td>60€</td><td>65€</td><td>70€</td></tr>
+<tr><td>Duo Premium</td><td>130€</td><td>140€</td><td>150€</td></tr>
+</table>
+
+<h3>Options</h3>
+<table class="price-table">
+<tr><th>Option</th><th>Prix</th></tr>
+<tr><td>Nettoyage compartiment moteur</td><td>30€</td></tr>
+<tr><td>Pose traitement hydrophobe pare-brise</td><td>20€</td></tr>
+<tr><td>Pressing vapeur sièges tissu</td><td>50€</td></tr>
+<tr><td>Nettoyage sièges cuir + soins protecteurs</td><td>60€</td></tr>
+<tr><td>Nettoyage sorties d’échappement</td><td>30€</td></tr>
+<tr><td>Traitement habitacle ozone (anti-odeur / antibactérien)</td><td>30€</td></tr>
+</table>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact</h2>
+<p>Téléphone : 06 XX XX XX XX</p>
+<p>Email : contact@cleancar90.fr</p>
+<p>Ville : Votre ville</p>
+<br>
+<button>Prendre rendez-vous</button>
+</section>
+
+<section class="section" id="social">
+<h2>Nos Réseaux Sociaux</h2>
+<div class="socials">
+<a href="https://www.facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+<a href="https://www.instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+<a href="https://www.tiktok.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Clean Car 90</p>
+</footer>
+
+</body>
+</html>
